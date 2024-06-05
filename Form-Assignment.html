@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style></style>
+  </head>
+
+  <body>
+    <form action="/submit-form" method="post">
+      <div>
+        <h1 style="text-align: center">AGREEMENT</h1>
+
+        <div>
+          <fieldset>
+            <legend>Sozlesme Onay</legend>
+
+            <input
+              type="checkbox"
+              id="checkbox"
+              name="Kabul edilen sozlesme bilgileri"
+              value="onayliyorum"
+            />
+            <label style="text-transform: capitalize" for="checkbox">
+              Asagidaki Bilgilerin Dogrulugunu kabul ediyorum ve sozlesmeyi
+              onayliyorum.</label
+            >
+
+            <input type="reset" value="Formu Temizle" />
+            <input type="submit" value="Formu Kaydet" />
+          </fieldset>
+        </div>
+
+        <br />
+
+        <div class="Form-Elemanlari">
+          <fieldset>
+            <legend>Kisisel Bilgiler</legend>
+
+            <label for="ID">Form Guvenlik ID</label>
+            <input
+              type="text"
+              id="ID"
+              name="girilen id bilgisi"
+              placeholder="R-456XX"
+            />
+            <br />
+
+            <label for="Isim">Ad</label>
+            <input
+              type="text"
+              style="margin-left: 99px"
+              id="Isim"
+              name="Girilen isim"
+            />
+            <br />
+
+            <label for="SoyIsim">Soyad</label>
+            <input
+              type="text"
+              style="margin-left: 79px"
+              id="Isim"
+              name="Girilen soy isim"
+            />
+
+            <br />
+
+            <label for="age">Yas</label>
+            <input
+              type="number"
+              style="margin-left: 96px; width: 40px"
+              id="age"
+              name="Girilen yas"
+              max="80"
+              step="1"
+            />
+
+            <br />
+
+            <label for="mail">Mail Adresi</label>
+            <input
+              type="email"
+              style="margin-left: 43px"
+              id="mail"
+              name="Girilen mail adresi"
+            />
+
+            <br />
+
+            <label for="file">Fotograf Ekle</label>
+            <input type="file" style="margin-left: 31px" />
+          </fieldset>
+
+          <br />
+
+          <fieldset>
+            <legend>Diger Bilgiler</legend>
+
+            <h2 style="font-size: medium; margin-left: 40px">
+              Buradaki Alanlar Mesleki Deneyimi Kapsar
+            </h2>
+
+            <label for="Tarih">Sektore Giris Tarihi</label>
+            <input type="date" name="Girilen Tarih" id="Tarih" />
+            <br />
+
+            <label for="">Sektor Deneyimi</label>
+
+            <input type="radio" id="1-5" name="calisilan yil" value="yil" />
+            <label for="1-5">1-5 yil</label>
+            <br />
+
+            <input
+              style="margin-left: 118px"
+              type="radio"
+              id="6-10"
+              name="calisilan yil2"
+              value="yil"
+            />
+            <label for="6-10">6-10 yil</label>
+            <br />
+
+            <input
+              style="margin-left: 118px"
+              type="radio"
+              id="11-15"
+              name="calisilan yil2"
+              value="yil"
+            />
+            <label for="11-15">11-15 yil</label>
+            <br />
+
+            <input
+              style="margin-left: 118px"
+              type="radio"
+              id="15 ve uzeri"
+              name="calisilan yil2"
+              value="yil"
+            />
+            <label for="15 ve uzeri">15 ve uzeri</label>
+            <br />
+
+            <label for="program">Programlama Dilleri</label>
+
+            <select name="diller" id="program" size="5" multiple>
+              <option value="c#">C#</option>
+              <option value="c#">JavaScript</option>
+              <option value="c#">Java</option>
+              <option value="c#">Phyton</option>
+              <option value="c#">C++</option>
+              <option value="c#">R</option>
+            </select>
+          </fieldset>
+          <br />
+          <div>
+            <fieldset>
+              <legend>Sozlesme Kopyasi</legend>
+
+              <label for="aciklama"></label>
+              <textarea
+                style="resize: none; width: 50%"
+                name="sozlesmenin kopyasi"
+                id="aciklama"
+              >
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum eos nisi consequatur laborum debitis alias. </textarea
+              >
+            </fieldset>
+
+            <div>
+              <fieldset>
+                <legend>Mail Listesi</legend>
+
+                <label for="sozlesme"
+                  >Mail Listesine Katilmak
+                  <span style="color: rgb(47, 0, 255); font-weight: bold">
+                    Istiyorum
+                  </span></label
+                >
+                <input
+                  type="radio"
+                  id="sozlesme"
+                  name="mail listesi kabulu"
+                  value="agreement"
+                />
+                <br />
+
+                <label for="sozlesme2"
+                  >Mail Listesine Katilmak
+                  <span
+                    style="
+                      color: red;
+                      font-weight: bolder;
+                      text-decoration: underline;
+                    "
+                  >
+                    Istemiyorum
+                  </span></label
+                >
+                <input
+                  type="radio"
+                  id="sozlesme2"
+                  name="mail listesi kabulu"
+                  value="not accepting agreement"
+                />
+              </fieldset>
+            </div>
+          </div>
+        </div>
+      </div>
+    </form>
+  </body>
+</html>
