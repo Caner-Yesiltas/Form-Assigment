@@ -23,8 +23,8 @@
               name="Kabul edilen sozlesme bilgileri"
               value="onayliyorum"
             />
-            <label style="text-transform: capitalize" for="checkbox">
-              Asagidaki Bilgilerin Dogrulugunu kabul ediyorum ve sozlesmeyi
+            <label style="text-transform: capitalize" for="checkbox"
+              >Asagidaki Bilgilerin Dogrulugunu kabul ediyorum ve sozlesmeyi
               onayliyorum.</label
             >
 
@@ -61,10 +61,9 @@
             <input
               type="text"
               style="margin-left: 79px"
-              id="Isim"
+              id="SoyIsim"
               name="Girilen soy isim"
             />
-
             <br />
 
             <label for="age">Yas</label>
@@ -76,7 +75,6 @@
               max="80"
               step="1"
             />
-
             <br />
 
             <label for="mail">Mail Adresi</label>
@@ -86,7 +84,6 @@
               id="mail"
               name="Girilen mail adresi"
             />
-
             <br />
 
             <label for="file">Fotograf Ekle</label>
@@ -143,70 +140,65 @@
             <br />
 
             <label for="program">Programlama Dilleri</label>
-
             <select name="diller" id="program" size="5" multiple>
               <option value="c#">C#</option>
-              <option value="c#">JavaScript</option>
-              <option value="c#">Java</option>
-              <option value="c#">Phyton</option>
-              <option value="c#">C++</option>
-              <option value="c#">R</option>
+              <option value="js">JavaScript</option>
+              <option value="java">Java</option>
+              <option value="python">Python</option>
+              <option value="cpp">C++</option>
+              <option value="r">R</option>
             </select>
           </fieldset>
+
           <br />
-          <div>
-            <fieldset>
-              <legend>Sozlesme Kopyasi</legend>
 
-              <label for="aciklama"></label>
-              <textarea
-                style="resize: none; width: 50%"
-                name="sozlesmenin kopyasi"
-                id="aciklama"
-              >
-Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum eos nisi consequatur laborum debitis alias. </textarea
-              >
-            </fieldset>
+          <fieldset>
+            <legend>Sozlesme Kopyasi</legend>
+            <label for="aciklama"></label>
+            <textarea
+              style="resize: none; width: 50%"
+              name="sozlesmenin kopyasi"
+              id="aciklama"
+            >
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum eos nisi consequatur laborum debitis alias.</textarea
+            >
+          </fieldset>
 
-            <div>
-              <fieldset>
-                <legend>Mail Listesi</legend>
+          <fieldset>
+            <legend>Mail Listesi</legend>
 
-                <label for="sozlesme"
-                  >Mail Listesine Katilmak
-                  <span style="color: rgb(47, 0, 255); font-weight: bold">
-                    Istiyorum
-                  </span></label
-                >
-                <input
-                  type="radio"
-                  id="sozlesme"
-                  name="mail listesi kabulu"
-                  value="agreement"
-                />
-                <br />
+            <label for="sozlesme"
+              >Mail Listesine Katilmak
+              <span style="color: rgb(47, 0, 255); font-weight: bold"
+                >Istiyorum</span
+              ></label
+            >
+            <input
+              type="radio"
+              id="sozlesme"
+              name="mail_listesi"
+              value="agreement"
+            />
+            <br />
 
-                <label for="sozlesme2"
-                  >Mail Listesine Katilmak
-                  <span
-                    style="
-                      color: red;
-                      font-weight: bolder;
-                      text-decoration: underline;
-                    "
-                  >
-                    Istemiyorum
-                  </span></label
-                >
-                <input
-                  type="radio"
-                  id="sozlesme2"
-                  name="mail listesi kabulu"
-                  value="not accepting agreement"
-                />
-              </fieldset>
-            </div>
-          </div>
+            <label for="sozlesme2"
+              >Mail Listesine Katilmak
+              <span
+                style="
+                  color: red;
+                  font-weight: bolder;
+                  text-decoration: underline;
+                "
+                >Istemiyorum</span
+              ></label
+            >
+            <input
+              type="radio"
+              id="sozlesme2"
+              name="mail_listesi"
+              value="not_accepting_agreement"
+            />
+          </fieldset>
         </div>
       </div>
     </form>
